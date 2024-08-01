@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://media1.tenor.com/m/TQY0_moIBI4AAAAC/john-green-looking-for-alaska.gif" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            user-select: none;
+            cursor: default;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        a, button, input, textarea {
+            user-select: auto;
+            cursor: pointer;
+        }
+
+        @font-face {
+            font-family: 'AdRip1';
+            src: url('https://github.com/Stationsflyp/BOT-JAZZZ-666/releases/download/rec/EAGLE.DARK.ttf') format('truetype');
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.90);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            color: white;
+            font-size: 36px;
+            font-family: 'AdRip1', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Overlay for initial click -->
+    <div id="overlay" class="overlay">wake up To Realty</div>
+
+    <!-- Audio element for background music -->
+    <audio id="background-music">
+        <source src="https://github.com/Stationsflyp/MAC-MD/releases/download/fvcac/1nonly.x.lilbubblegum.ash.kaashh.prod.nategoyard.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="background-container"></div>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="https://media1.tenor.com/m/TQY0_moIBI4AAAAC/john-green-looking-for-alaska.gif" alt="Profile Picture" class="profile-img">
+            <h2>@oxcy666</h2>
+            <p class="status">Sir.<span class="crown">Code !</span></p>
+            <div class="profile-details">
+                <p class="username">:)</p>
+                <p class="description">"Simplicity is the ultimate sophistication."</p>
+                <div class="social-icons">
+                    <a href="https://discord.gg/98cuWP64bc" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/lunita66666/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B19295365930&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('overlay').addEventListener('click', function() {
+            this.style.display = 'none';
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+</body>
+
+</html>
